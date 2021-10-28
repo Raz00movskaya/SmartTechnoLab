@@ -4,5 +4,9 @@
 # просуммировать кол-во ног всех животных и вывести результат на консоль.
 
 def number_of_legs(number_of_chickens, number_of_pigs, number_of_cows):
-    return (int(number_of_chickens) * 2 + (int(number_of_pigs) + int(number_of_cows)) * 4)
+    try:
+        return int(number_of_chickens) * 2 + (int(number_of_pigs) + int(number_of_cows)) * 4
+    except ValueError:
+        print('Неверные входные данные')
+
 

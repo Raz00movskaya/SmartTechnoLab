@@ -4,5 +4,8 @@
 # и вывести это число на консоль.
 
 def bonus_cups(number_of_cups):
-    return int(number_of_cups) // 6 if int(number_of_cups) >= 0 else 0
+    try:
+        return int(number_of_cups) // 6 if int(number_of_cups) >= 0 else 0
+    except ValueError:
+        print('Неверные входные данные')
 
